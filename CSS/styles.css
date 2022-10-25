@@ -12,7 +12,6 @@ body {
   letter-spacing: 0.03em;
   font-size: 14px;
   color: var(--text-color);
-  width: 1600px;
 }
 
 h1,
@@ -56,6 +55,7 @@ img {
 .header {
   padding-top: 25px;
   padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
 }
 /*--NAVIGATION-SECTION------------*/
 .header-container {
@@ -152,18 +152,14 @@ img {
 
 /*--PAGE-PRIMARY-BANER-SECTION--------------*/
 .banner {
-  width: 1600px;
-  height: 600px;
-  left: 0px;
-  top: 80px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 94px;
   background: var(--bg-color-black);
+  padding: 200px 200px;
 }
 
 .banner h1 {
-  position: relative;
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
@@ -172,9 +168,6 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
-  padding-top: 200px;
-  padding-left: auto;
-  padding-right: auto;
 }
 
 .banner button {
@@ -208,9 +201,16 @@ img {
   gap: 30px;
 }
 
+.benefits-header:not(:last-child) {
+  padding-right: 30px;
+}
+
 .benefit-items {
-  flex-basis: calc((100% - 120px) / 4);
-  padding-bottom: 94px;
+  flex-basis: calc((100% - 90px) / 4);
+}
+
+.benefits-main {
+  margin: 94px 94px;
 }
 
 .benefits-main h3 {
@@ -220,10 +220,10 @@ img {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--h2-h3-color);
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
-.benefits-main p:not(:last-child) {
+.benefits-main p {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -233,7 +233,10 @@ img {
 
 /*--benefits-section-end-----------*/
 /*--experience-section----------*/
-
+.experience-main {
+  margin-top: 0px;
+  margin-bottom: 94px;
+}
 .experience-main h2,
 .our-command-main h2 {
   font-style: normal;
@@ -242,13 +245,12 @@ img {
   line-height: 1.16;
   text-align: center;
   color: var(--h2-h3-color);
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .img-experience-main {
   display: flex;
   gap: 30px;
-  padding-bottom: 94px;
 }
 
 .our-command-main {
@@ -265,10 +267,13 @@ img {
   background-color: #ffffff;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  box-shadow: 1px 0px 2px rgba(0, 0, 0.2), 1px 0px 1px rgba(0, 0, 0, 0.12),
-    1px 0px 1px rgba(0, 0, 0, 0.14);
+  box-shadow: 1px 0px 2px rgba(0, 0, 0.2), 1px 0px 1px rgba(0, 0, 0, 0.14),
+    3px 0px 1px rgba(0, 0, 0, 0.12);
 }
 
+.persone {
+  padding: 30px 30px;
+}
 .our-command-main h3 {
   font-style: normal;
   font-weight: 500;
@@ -276,7 +281,7 @@ img {
   line-height: 1.18;
   text-align: center;
   color: var(--h2-h3-color);
-  padding: 30px 10px;
+  margin-bottom: 10px;
 }
 
 .our-command-main p {
@@ -285,23 +290,21 @@ img {
   line-height: 1.18;
   text-align: center;
   color: var(--text-color);
-  padding-bottom: 30px;
 }
 /*--experience-section-end--*/
 /*--PAGE-PRIMARY-BANER-SECTION-END---*/
 
 /*--PAGE-PORTFOLIO-------*/
-/*--filter-section--------------------*/
-.portfolio {
-  width: 1600px;
-}
 
+.portfolio {
+  margin: 94px 94px;
+}
+/*--filter-section----------*/
 .btn-filter {
   display: flex;
   gap: 8px;
-  padding-left: 512px;
-  padding-right: 513px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
+  justify-content: center;
 }
 
 .portfolio button {
@@ -329,12 +332,11 @@ img {
   color: var(--white-color);
 }
 /*--filter-section-end--------*/
-/*--portfolio-items-----------------------*/
+/*--portfolio-items-----------*/
 .project-items {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  padding-bottom: 94px;
 }
 
 .project-items:not(:last-child) {
@@ -345,8 +347,12 @@ img {
 .project-items-card {
   box-sizing: border-box;
   width: 370px;
-  border: 1px solid #eeeeee;
   flex-basis: calc((100% - 60px) / 3);
+}
+
+.project-description {
+  padding: 20px 24px 20px 24px;
+  border: 1px solid #eeeeee;
 }
 
 .project-items h2 {
@@ -355,10 +361,7 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--h2-h3-color);
-  margin-top: 20px;
   margin-bottom: 4px;
-  padding-left: 24px;
-  padding-right: 24px;
 }
 
 .project-items p {
@@ -366,9 +369,6 @@ img {
   font-size: 16px;
   line-height: 1.85;
   color: var(--text-color);
-  margin-bottom: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
 }
 /*--PAGE-PORTFOLIO-END----*/
 
@@ -384,7 +384,7 @@ footer a {
 }
 
 .logo-footer {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .logo-white {
@@ -402,6 +402,7 @@ address p {
   font-size: 14px;
   line-height: 1.71;
   color: var(--white-color);
+  margin-bottom: 9px;
 }
 
 address a {
@@ -410,5 +411,9 @@ address a {
   font-size: 14px;
   line-height: 1.71;
   color: var(--adress-a-color);
+}
+
+address li:not(:last-child) {
+  margin-bottom: 9px;
 }
 /*--FOOTER-SECTION-END--------------*/
